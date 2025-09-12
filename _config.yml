@@ -10,8 +10,8 @@
 locale                   : "en-US"
 title                    : "Yuanhao Zou's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Yuanhao Zou"
+description              : &description "UCF CS PhD"
 url                      : https://alexco1d.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "AlexCo1d/alexco1d.github.io/"
@@ -25,14 +25,14 @@ author:
   name             : "Zou, Yuanhao"
   pronouns         : # example: "she/her"  
   bio              : ""
-  location         : "Ann Arbor, MI"
-  employer         : "University of Michigan"
+  location         : "Orlando, FL"
+  employer         : "University of Central Florida"
   uri              : # URL
   email            : "yuanhaoz@ucf.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=5-EyovEAAAAJ"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0009-8997-5835"
   semantic         : # URL
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/yuanhao-zou-1a0a5727b/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
