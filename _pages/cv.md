@@ -12,7 +12,7 @@ redirect_from:
 # Yuanhao Zou
 Orlando, FL | <yuanhaoz@ucf.edu> | 734-358-6400
 
-[_PDF version CV Here_](../files/CV.pdf)
+[_**PDF version CV Here**_](../files/CV.pdf)
 
 ---
 
