@@ -26,7 +26,7 @@ Orlando, FL | <yuanhaoz@ucf.edu> | 734-358-6400
 **University of Michigan, Ann Arbor** | MS in Electrical and Computer Engineering
 *Aug 2023 – May 2025*
 - GPA: 4.0/4.0
-- **Coursework:** Computer Vision (A), Machine Learning (A), Advanced Computer Vision (A), Robotic Mathematics ($A^+$), Large Language Model.
+- **Coursework:** Computer Vision (A), Machine Learning (A), Advanced Computer Vision (A), Robotic Mathematics (A+), Large Language Model.
 
 **Central South University, China** | BE in Computer Science and Technology
 *Sep 2019 – Jun 2023*
