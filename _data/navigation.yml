@@ -35,3 +35,13 @@ main:
     
   # - title: "Guide"
   #   url: /markdown/
+
+zh:
+  - title: "主页"
+    url: /zh/
+
+  - title: "论文"
+    url: /publications/
+
+  - title: "简历"
+    url: /zh/cv/

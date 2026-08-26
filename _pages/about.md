@@ -1,18 +1,22 @@
 ---
 permalink: /
 title: "About Me"
+lang: en-US
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi! I am **Yuanhao Zou**, a first-year Computer Science PhD student at the [University of Central Florida](https://www.ucf.edu/), advised by Prof. [Chen Chen](https://www.crcv.ucf.edu/chenchen/) at the [Center for Research in Computer Vision (CRCV)](https://www.crcv.ucf.edu/).
+{% include language-switch.html active="en" en_url="/" zh_url="/zh/" label="Homepage language" context="Home" %}
+
+Hi! I am **Yuanhao Zou**, a Computer Science PhD student at the [University of Central Florida](https://www.ucf.edu/), advised by Prof. [Chen Chen](https://www.crcv.ucf.edu/chenchen/) at the [Center for Research in Computer Vision (CRCV)](https://www.crcv.ucf.edu/).
 
 I received my Master's degree in Electrical and Computer Engineering from the [University of Michigan, Ann Arbor](https://umich.edu/), where I was advised by Prof. [Zhaozheng Yin](https://www3.cs.stonybrook.edu/~zyin/index.htm) on Medical Vision and Language Models. Before that, I obtained my Bachelor's degree in Computer Science from [Central South University](https://en.csu.edu.cn/), working with Prof. [Xiangjian He](https://research.nottingham.edu.cn/en/persons/xiangjian-he) on Medical Image Segmentation.
 
-<p style="margin-top: 1em;">
+<p class="profile-actions">
   <a class="btn btn--info btn--small" href="{{ base_path }}/files/CV.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+  <a class="btn btn--inverse btn--small" href="{{ base_path }}/files/CV_CN.pdf"><i class="fas fa-file-pdf"></i> 中文简历</a>
   <a class="btn btn--info btn--small" href="https://scholar.google.com/citations?user=5-EyovEAAAAJ"><i class="ai ai-google-scholar"></i> Scholar</a>
   <a class="btn btn--info btn--small" href="https://github.com/AlexCo1d"><i class="fab fa-github"></i> GitHub</a>
   <a class="btn btn--info btn--small" href="mailto:yuanhaoz@ucf.edu"><i class="fas fa-envelope"></i> Email</a>
@@ -22,17 +26,18 @@ I received my Master's degree in Electrical and Computer Engineering from the [U
 
 My research focuses on building **efficient and scalable multimodal models** that can understand the visual world over time. Specifically, I am interested in:
 
-<ul style="list-style: none; padding-left: 0;">
-  <li style="margin-bottom: 0.6em;"><i class="fas fa-video" style="color:#2f7f93; width:1.4em;"></i> <b>Video Understanding</b> — Temporal grounding, long-form video reasoning, and frame selection.</li>
-  <li style="margin-bottom: 0.6em;"><i class="fas fa-microchip" style="color:#2f7f93; width:1.4em;"></i> <b>Efficient Vision-Language Models</b> — Compact, on-device VLMs that keep strong perception and reasoning under tight compute budgets.</li>
-  <li style="margin-bottom: 0.6em;"><i class="fas fa-triangle-exclamation" style="color:#2f7f93; width:1.4em;"></i> <b>Video Anomaly Detection</b> — Detecting and localizing anomalous events in real-world surveillance and edge scenarios.</li>
+<ul class="research-focus-list">
+  <li><i class="fas fa-video"></i><span><b>Video Understanding</b> — Temporal grounding, long-form video reasoning, and frame selection.</span></li>
+  <li><i class="fas fa-microchip"></i><span><b>Efficient Vision-Language Models</b> — Compact, on-device VLMs that keep strong perception and reasoning under tight compute budgets.</span></li>
+  <li><i class="fas fa-diagram-project"></i><span><b>Multimodal Agents and Reinforcement Learning</b> — Joint reasoning across RGB, thermal, depth, and multi-view video.</span></li>
+  <li><i class="fas fa-triangle-exclamation"></i><span><b>Video Anomaly Detection</b> — Detecting and localizing anomalous events in real-world surveillance and edge scenarios.</span></li>
 </ul>
 
 Previously, I also worked extensively on **Medical Vision-Language Models** (visual question answering, image–text retrieval) and **Medical Image Segmentation**.
 
 ## News
 
-<ul style="list-style: none; padding-left: 0; line-height: 1.7;">
+<ul class="news-list">
   <li><b>[Jun 2026]</b> <i>CoMET Agent</i> and <i>CoMET-Bench</i> are released on <b>arXiv</b>. 🎉</li>
   <li><b>[Jun 2026]</b> <i>CLARITY</i> is accepted to <b>ECCV 2026</b>!</li>
   <li><b>[Feb 2026]</b> <i>How Should Video LLMs Output Time?</i> is accepted to a <b>CVPR 2026 Workshop</b>.</li>

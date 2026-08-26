@@ -1,0 +1,16 @@
+{% include base_path %}
+{% assign switch_label = include.label | default: "Language" %}
+<nav class="language-switch" aria-label="{{ switch_label }}">
+  <span class="language-switch__context">{{ include.context }}</span>
+  <span class="language-switch__label">{{ switch_label }}</span>
+  <span class="language-switch__control">
+    <a href="{{ base_path }}{{ include.en_url }}"
+       lang="en"
+       class="language-switch__option{% if include.active == 'en' %} is-active{% endif %}"
+       {% if include.active == 'en' %}aria-current="page"{% endif %}>EN</a>
+    <a href="{{ base_path }}{{ include.zh_url }}"
+       lang="zh-CN"
+       class="language-switch__option{% if include.active == 'zh' %} is-active{% endif %}"
+       {% if include.active == 'zh' %}aria-current="page"{% endif %}>中文</a>
+  </span>
+</nav>
