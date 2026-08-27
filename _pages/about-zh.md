@@ -7,9 +7,11 @@ author_profile: true
 
 {% include language-switch.html active="zh" en_url="/" zh_url="/zh/" label="首页语言" context="首页" %}
 
-你好！我是 **邹元昊（Yuanhao Zou）**，现为 [University of Central Florida](https://www.ucf.edu/) 计算机科学博士生，在 [Center for Research in Computer Vision (CRCV)](https://www.crcv.ucf.edu/) 师从 [Prof. Chen Chen](https://www.crcv.ucf.edu/chenchen/)。
+你好！我是 **邹元昊（Yuanhao Zou）**，现为 [University of Central Florida](https://www.ucf.edu/) 计算机科学博士生，在 [Center for Research in Computer Vision (CRCV)](https://www.crcv.ucf.edu/) 师从 [Prof. Chen Chen](https://www.crcv.ucf.edu/chenchen/)，预计于 **2028 年 5 月**毕业。
 
 此前，我在 [University of Michigan, Ann Arbor](https://umich.edu/) 获得电子与计算机工程硕士学位，并与 [Zhaozheng Yin 教授](https://www3.cs.stonybrook.edu/~zyin/index.htm)合作研究医学视觉语言模型；本科毕业于[中南大学](https://www.csu.edu.cn/)，期间在 [Xiangjian He 教授](https://research.nottingham.edu.cn/en/persons/xiangjian-he)指导下开展医学图像分割研究。
+
+我计划自 **2027 年 5 月**起在上海进行暑期算法研究实习，每周可到岗 5 天，可连续实习 4–6 个月。
 
 <p class="profile-actions">
   <a class="btn btn--info btn--small" href="{{ base_path }}/files/CV_CN.pdf"><i class="fas fa-file-pdf"></i> 中文简历</a>
