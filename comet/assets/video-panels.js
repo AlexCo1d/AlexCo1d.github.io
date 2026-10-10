@@ -9,7 +9,7 @@
  const status=(element,en,zh)=>{if(element)element.textContent=language==='zh'?zh:en;};
  function installMedia(video,statusElement){
   video.addEventListener('playing',()=>{video.classList.remove('media-unavailable');status(statusElement,'Playing the selected video segment.','正在播放所选视频片段。');});
-  video.addEventListener('error',()=>{video.classList.add('media-unavailable');status(statusElement,'Video unavailable here; open the original on HF.','当前无法播放视频，可打开 HF 原视频。');});
+  video.addEventListener('error',()=>{video.classList.add('media-unavailable');status(statusElement,'HF access approval is required. Request access, then open the video on HF.','视频需要 HF 访问授权，请先申请访问，再在 HF 打开原视频。');});
   video.addEventListener('loadedmetadata',()=>{if(video.dataset.pendingStart)video.currentTime=Number(video.dataset.pendingStart);});
   video.addEventListener('play',()=>{$$('video').forEach(other=>{if(other!==video)other.pause();});});
   video.addEventListener('timeupdate',()=>{
@@ -21,7 +21,7 @@
   video.dataset.pendingStart=String(start);video.dataset.segmentEnd=String(end);
   status(statusElement,`Loading ${time(start)}–${time(end)}…`,`正在加载 ${time(start)}–${time(end)}…`);
   if(video.readyState>=1)video.currentTime=start;
-  const promise=video.play();if(promise)promise.catch(()=>status(statusElement,'Use the video play control, or open the HF source.','请使用视频播放控件，或打开 HF 原视频。'));
+  const promise=video.play();if(promise)promise.catch(()=>status(statusElement,'Request HF access first; after approval, open the video on HF if it does not play here.','请先申请 HF 访问；获批后如无法在此播放，可在 HF 打开原视频。'));
  }
  function renderHero(){
   if(!records.length)return;
@@ -33,7 +33,7 @@
   if(item.window){const x=12+416*item.window[0]/item.duration,w=416*(item.window[1]-item.window[0])/item.duration;$('#search-window').setAttribute('x',x);$('#search-window').setAttribute('width',w);$('#scope-boundaries').setAttribute('d',`M${x} 7v33M${x+w} 7v33`);}
   const tags=$('#hero-condition-tags');tags.replaceChildren();
   item.conditions.forEach(condition=>{const span=document.createElement('span');const kind=['causal','sequential','synchronous','bounded'].includes(condition)?'temporal':condition==='negative'?'negative':'spatial';span.className=`condition-tag condition-${kind}`;span.textContent=names[condition][language==='zh'?1:0];tags.append(span);});
-  if(heroKey!==item.key){hero.pause();heroKey=item.key;hero.poster=item.poster;hero.src=`${item.src}#t=${item.start},${item.end}`;hero.dataset.pendingStart=String(item.start);hero.dataset.segmentEnd=String(item.end);status($('#hero-media-status'),item.count?'Video begins at the first annotated moment.':'Context preview; no matching event is annotated.',item.count?'视频从第一个标注事件开始。':'播放背景片段；标注中没有匹配事件。');}
+  if(heroKey!==item.key){hero.pause();heroKey=item.key;hero.poster=item.poster;hero.src=`${item.src}#t=${item.start},${item.end}`;hero.dataset.pendingStart=String(item.start);hero.dataset.segmentEnd=String(item.end);status($('#hero-media-status'),item.count?'After HF access approval, video begins at the first annotated moment.':'Context preview; no matching event is annotated.',item.count?'获得 HF 访问授权后，视频从第一个标注事件开始。':'播放背景片段；标注中没有匹配事件。');}
  }
  installMedia(hero,$('#hero-media-status'));
  $$('[data-case]').forEach(card=>{
