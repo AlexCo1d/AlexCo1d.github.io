@@ -111,6 +111,7 @@
   });
   // Every visit opens in English; Chinese remains available through the language toggle.
   setLanguage('en');
+  window.addEventListener('pageshow',event=>{if(event.persisted)setLanguage('en');});
   if('IntersectionObserver' in window&&!reducedMotion.matches){
     document.documentElement.classList.add('has-motion');
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
