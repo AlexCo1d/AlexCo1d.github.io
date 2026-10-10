@@ -84,7 +84,6 @@
     $('#copy-status').textContent='';
     updateExample();updateStage();updateResults();
     document.dispatchEvent(new CustomEvent('comet-language',{detail:{lang}}));
-    try{localStorage.setItem('comet-project-language',lang);}catch(error){/* Content remains usable without storage. */}
   }
   $$('[data-lang]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();setLanguage(button.dataset.lang);}));
   $$('[data-example]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();example=button.dataset.example;match=0;updateExample();}));
@@ -110,8 +109,8 @@
       $('#copy-status').textContent=lang==='zh'?'已复制 BibTeX。':'BibTeX copied.';
     }catch(error){$('#copy-status').textContent=lang==='zh'?'无法自动复制；可以选中文本复制或下载 .bib 文件。':'Select the text to copy it, or download the .bib file.';}
   });
-  try{const saved=localStorage.getItem('comet-project-language');if(saved==='en'||saved==='zh')lang=saved;}catch(error){/* Use English by default. */}
-  setLanguage(lang);
+  // Every visit opens in English; Chinese remains available through the language toggle.
+  setLanguage('en');
   if('IntersectionObserver' in window&&!reducedMotion.matches){
     document.documentElement.classList.add('has-motion');
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
