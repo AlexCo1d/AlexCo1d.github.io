@@ -34,10 +34,11 @@
   };
   const intervals=['30:43–30:52','30:56–31:10','31:19–31:40'];
   function cancelReplay(){replayTimers.forEach(window.clearTimeout);replayTimers=[];}
-  function updateMatch(){
+  function updateMatch(play=false){
     $$('[data-match]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.match)===match)));
     $$('[data-block]').forEach(block=>block.classList.toggle('active',Number(block.dataset.block)===match));
     $$('.block-number').forEach((number,index)=>number.classList.toggle('active',index===match));
+    document.dispatchEvent(new CustomEvent('comet-match',{detail:{index:match,example,play}}));
     $('#demo-status').textContent=lang==='zh'?`所选事件 ${match+1}：${intervals[match]}。共 3 个事件。`:`Selected event ${match+1}: ${intervals[match]}. Three events in total.`;
   }
   function updateExample(){
@@ -55,6 +56,7 @@
     $$('[data-example]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.example===example)));
     if(example==='positive')updateMatch();
     else $('#demo-status').textContent=lang==='zh'?'该时间范围内没有匹配事件。答案为 0，定位结果为空。':'No matching event in this window. The count is zero and the grounded set is empty.';
+    document.dispatchEvent(new CustomEvent('comet-example',{detail:{example,lang,index:match}}));
   }
   function updateStage(){
     $$('[data-step]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.step)===stage)));
@@ -81,18 +83,15 @@
     $$('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===lang)));
     $('#copy-status').textContent='';
     updateExample();updateStage();updateResults();
+    document.dispatchEvent(new CustomEvent('comet-language',{detail:{lang}}));
     try{localStorage.setItem('comet-project-language',lang);}catch(error){/* Content remains usable without storage. */}
   }
   $$('[data-lang]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();setLanguage(button.dataset.lang);}));
   $$('[data-example]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();example=button.dataset.example;match=0;updateExample();}));
-  $$('[data-match]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();match=Number(button.dataset.match);updateMatch();}));
+  $$('[data-match]').forEach(button=>button.addEventListener('click',()=>{cancelReplay();match=Number(button.dataset.match);updateMatch(true);}));
   $$('[data-step]').forEach(button=>button.addEventListener('click',()=>{stage=Number(button.dataset.step);updateStage();}));
   $$('[data-model]').forEach(button=>button.addEventListener('click',()=>{model=button.dataset.model;updateResults();}));
-  $('#replay').addEventListener('click',()=>{
-    cancelReplay();match=0;updateMatch();
-    if(reducedMotion.matches){match=2;updateMatch();return;}
-    [1,2].forEach((value,index)=>replayTimers.push(window.setTimeout(()=>{match=value;updateMatch();},650*(index+1))));
-  });
+  $('#replay').addEventListener('click',()=>{cancelReplay();updateMatch(true);});
   reducedMotion.addEventListener('change',()=>{cancelReplay();});
   let bibtex='';
   fetch('assets/citation.bib').then(response=>{if(!response.ok)throw new Error('Citation unavailable');return response.text();}).then(text=>{bibtex=text;$('#bibtex').textContent=text;}).catch(()=>{

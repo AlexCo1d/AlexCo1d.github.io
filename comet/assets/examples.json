@@ -1,0 +1,264 @@
+[
+  {
+    "key": "jaguar",
+    "video": "5WIdIs3A9Ok",
+    "query": "5WIdIs3A9Ok_q001",
+    "file": "Jaguar vs. Croc ｜ Full Episode.mp4",
+    "title": "Jaguar swimming",
+    "titleZh": "美洲豹逆流游泳",
+    "queryZh": "在 00:16:00 至 00:34:00 之间，美洲豹逆着河水游泳的不同片段共有多少个？",
+    "paper": "Figure 1(d) / Figure 4",
+    "start": 1843,
+    "end": 1852,
+    "window": [
+      960,
+      2040
+    ],
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/Jaguar%20vs.%20Croc%20%EF%BD%9C%20Full%20Episode.mp4",
+    "poster": "assets/examples/jaguar.jpg",
+    "queryText": "Between 00:16:00 and 00:34:00, how many distinct segments occur where the jaguar is shown performing a swimming motion against the river current?",
+    "conditions": [
+      "bounded",
+      "dynamic"
+    ],
+    "intervals": [
+      [
+        1843,
+        1852
+      ],
+      [
+        1856,
+        1870
+      ],
+      [
+        1879,
+        1900
+      ]
+    ],
+    "count": 3,
+    "duration": 2664,
+    "topic": "Life Record",
+    "sourceUrl": "https://www.youtube.com/watch?v=5WIdIs3A9Ok",
+    "queryId": "5WIdIs3A9Ok_q001"
+  },
+  {
+    "key": "basketball",
+    "video": "KLaBd-0yCE4",
+    "query": "KLaBd-0yCE4_q001",
+    "file": "THUNDER at CLIPPERS ｜ FULL GAME HIGHLIGHTS ｜ April 8, 2026.mp4",
+    "title": "Scoring through a foul",
+    "titleZh": "得分与犯规同时发生",
+    "queryZh": "有多少次球员投篮得分时防守方同时犯规，从而形成「打成 2+1」的回合？",
+    "paper": "Figure 2(a)",
+    "start": 389,
+    "end": 397,
+    "window": null,
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/THUNDER%20at%20CLIPPERS%20%EF%BD%9C%20FULL%20GAME%20HIGHLIGHTS%20%EF%BD%9C%20April%208%2C%202026.mp4",
+    "poster": "assets/examples/basketball.jpg",
+    "queryText": "Count the number of times a player successfully scores a field goal while a foul is simultaneously committed by the defense, resulting in an 'and-one' play.",
+    "conditions": [
+      "dynamic",
+      "synchronous"
+    ],
+    "intervals": [
+      [
+        389,
+        397
+      ],
+      [
+        412,
+        415
+      ],
+      [
+        560,
+        567
+      ],
+      [
+        711,
+        716
+      ],
+      [
+        775,
+        783
+      ]
+    ],
+    "count": 5,
+    "duration": 974,
+    "topic": "Sports",
+    "sourceUrl": "https://www.youtube.com/watch?v=KLaBd-0yCE4",
+    "queryId": "KLaBd-0yCE4_q001"
+  },
+  {
+    "key": "benchpress",
+    "video": "xre_3dxdhkQ",
+    "query": "xre_3dxdhkQ_q004",
+    "file": "Biggest BENCH PRESS Wins $500 vs SUBSCRIBERS.mp4",
+    "title": "Bench press after 120 lb",
+    "titleZh": "120 磅之后的卧推挑战",
+    "queryZh": "在重量达到 120 磅之后，找出所有戴太阳镜的人成功完成卧推挑战的时刻。",
+    "paper": "Figure 2(c)",
+    "start": 73,
+    "end": 77,
+    "window": null,
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/Biggest%20BENCH%20PRESS%20Wins%20%24500%20vs%20SUBSCRIBERS.mp4",
+    "poster": "assets/examples/benchpress.jpg",
+    "queryText": "After the weight reaches 120 LBS, find all the moments that a person wearing sunglasses successfully complete the bench press challenge.",
+    "conditions": [
+      "dynamic",
+      "static",
+      "sequential"
+    ],
+    "intervals": [
+      [
+        73,
+        77
+      ],
+      [
+        84,
+        89
+      ],
+      [
+        128,
+        140
+      ],
+      [
+        400,
+        412
+      ],
+      [
+        469,
+        482
+      ]
+    ],
+    "count": 5,
+    "duration": 549,
+    "topic": "Sports",
+    "sourceUrl": "https://www.youtube.com/watch?v=xre_3dxdhkQ",
+    "queryId": "xre_3dxdhkQ_q004"
+  },
+  {
+    "key": "lawyer",
+    "video": "mzvHYBgD-tI",
+    "query": "mzvHYBgD-tI_q003",
+    "file": "Real Lawyer Reacts to The Good Wife.mp4",
+    "title": "A cut back to the speaker",
+    "titleZh": "从剧集切回蓝西装讲解者",
+    "queryZh": "在前 10 分钟内，视频从电视剧片段切回坐在镜头前、穿蓝色西装的讲解者，一共发生多少次？",
+    "paper": "Figure 2(d)",
+    "start": 79,
+    "end": 140,
+    "window": [
+      0,
+      600
+    ],
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/Real%20Lawyer%20Reacts%20to%20The%20Good%20Wife.mp4",
+    "poster": "assets/examples/lawyer.jpg",
+    "queryText": "Between 00:00:00 and 00:10:00, count the number of times the video cuts from a clip of the TV show back to the speaker in the blue suit sitting in front of the camera.",
+    "conditions": [
+      "bounded",
+      "dynamic",
+      "identity"
+    ],
+    "intervals": [
+      [
+        79,
+        140
+      ],
+      [
+        156,
+        254
+      ],
+      [
+        281,
+        335
+      ],
+      [
+        370,
+        429
+      ],
+      [
+        438,
+        469
+      ],
+      [
+        509,
+        549
+      ],
+      [
+        580,
+        600
+      ]
+    ],
+    "count": 7,
+    "duration": 1818,
+    "topic": "Knowledge",
+    "sourceUrl": "https://www.youtube.com/watch?v=mzvHYBgD-tI",
+    "queryId": "mzvHYBgD-tI_q003"
+  },
+  {
+    "key": "news",
+    "video": "7NNAw_zvvOc",
+    "query": "7NNAw_zvvOc_q002",
+    "file": "Trump Hints End of Iran War in Sight; ASML Raises Sales Forecast ｜ Bloomberg Brief 4⧸15⧸2026.mp4",
+    "title": "News under a causal condition",
+    "titleZh": "满足因果条件的新闻片段",
+    "queryZh": "定位视频中报道的事件受到美国与伊朗冲突影响的所有片段。",
+    "paper": "Figure 2(b)",
+    "start": 176,
+    "end": 252,
+    "window": null,
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/Trump%20Hints%20End%20of%20Iran%20War%20in%20Sight%3B%20ASML%20Raises%20Sales%20Forecast%20%EF%BD%9C%20Bloomberg%20Brief%204%E2%A7%B815%E2%A7%B82026.mp4",
+    "poster": "assets/examples/news.jpg",
+    "queryText": "Identify and ground the moments in the video where the reported events are influenced by the U.S.–Iran conflict.",
+    "conditions": [
+      "static",
+      "causal"
+    ],
+    "intervals": [
+      [
+        176,
+        252
+      ],
+      [
+        316,
+        443
+      ]
+    ],
+    "count": 2,
+    "duration": 2603,
+    "topic": "TV/Movie",
+    "sourceUrl": "https://www.youtube.com/watch?v=7NNAw_zvvOc",
+    "queryId": "7NNAw_zvvOc_q002"
+  },
+  {
+    "key": "negative",
+    "video": "0175_surveil_23",
+    "query": "0175_surveil_23_q003",
+    "file": "0175_surveil_23.mp4",
+    "title": "A plausible event that never occurs",
+    "titleZh": "合理但实际未发生的事件",
+    "queryZh": "在 00:00:00 至 00:05:00 之间，一名成年男性进入房间照看婴儿的次数是多少？",
+    "paper": "Figure 2(e)",
+    "start": 15,
+    "end": 30,
+    "window": [
+      0,
+      300
+    ],
+    "src": "https://huggingface.co/datasets/CoMET-Bench/CoMET-Bench/resolve/main/video_examples/0175_surveil_23.mp4",
+    "poster": "assets/examples/negative.jpg",
+    "queryText": "Between 00:00:00 and 00:05:00, how many times does a male adult enter the room to take care of the baby?",
+    "conditions": [
+      "identity",
+      "negative",
+      "bounded",
+      "dynamic"
+    ],
+    "intervals": [],
+    "count": 0,
+    "duration": 949,
+    "topic": "Surveilance",
+    "sourceUrl": "0175_surveil_23.mp4",
+    "queryId": "0175_surveil_23_q003"
+  }
+]
