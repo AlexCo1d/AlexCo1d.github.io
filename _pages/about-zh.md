@@ -37,6 +37,7 @@ author_profile: true
 ## 代表性进展
 
 <ul class="news-list">
+  <li><b>[2026.10]</b> 长视频条件多事件时序定位工作 <i>CoMET-Bench / CoMET-Agent</i> 被 <b>NeurIPS 2026 Evaluations &amp; Datasets Track</b> 接收（一作）。</li>
   <li><b>[2026.06]</b> 发布长视频条件多事件时序定位工作 <i>CoMET Agent / CoMET-Bench</i>。</li>
   <li><b>[2026.06]</b> 医学世界模型 <i>CLARITY</i> 被 <b>ECCV 2026</b> 接收。</li>
   <li><b>[2026.02]</b> 高效视频时序定位工作被 <b>CVPR 2026 Workshop</b> 接收。</li>

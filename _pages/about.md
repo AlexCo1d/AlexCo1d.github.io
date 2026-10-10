@@ -38,6 +38,7 @@ Previously, I also worked extensively on **Medical Vision-Language Models** (vis
 ## News
 
 <ul class="news-list">
+  <li><b>[Oct 2026]</b> <i>CoMET-Bench / CoMET-Agent</i> is accepted to <b>NeurIPS 2026, Evaluations &amp; Datasets Track</b>!</li>
   <li><b>[Jun 2026]</b> <i>CoMET Agent</i> and <i>CoMET-Bench</i> are released on <b>arXiv</b>. 🎉</li>
   <li><b>[Jun 2026]</b> <i>CLARITY</i> is accepted to <b>ECCV 2026</b>!</li>
   <li><b>[Feb 2026]</b> <i>How Should Video LLMs Output Time?</i> is accepted to a <b>CVPR 2026 Workshop</b>.</li>
