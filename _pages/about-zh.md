@@ -11,6 +11,8 @@ author_profile: true
 
 此前，我在 [University of Michigan, Ann Arbor](https://umich.edu/) 获得电子与计算机工程硕士学位，并与 [Zhaozheng Yin 教授](https://www3.cs.stonybrook.edu/~zyin/index.htm)合作研究医学视觉语言模型；本科毕业于[中南大学](https://www.csu.edu.cn/)，期间在 [Xiangjian He 教授](https://research.nottingham.edu.cn/en/persons/xiangjian-he)指导下开展医学图像分割研究。
 
+目前，我在 **OpusClip** 担任 **AI Research Intern**，负责核心产品 **Opus Clip Video Editing Agent** 的训练，聚焦强化学习后训练与 reasoning 能力优化。
+
 我计划自 **2027 年 5 月**起在上海进行暑期算法研究实习，每周可到岗 5 天，可连续实习 4–6 个月。
 
 <p class="profile-actions">
@@ -37,6 +39,7 @@ author_profile: true
 ## 代表性进展
 
 <ul class="news-list">
+  <li><b>[2026.10]</b> 加入 <b>OpusClip</b> 担任 AI Research Intern，负责核心产品 Opus Clip Video Editing Agent 的 RL reasoning 训练。</li>
   <li><b>[2026.10]</b> 长视频条件多事件时序定位工作 <a href="/comet/"><i>CoMET-Bench / CoMET-Agent</i></a> 被 <b>NeurIPS 2026 Evaluations &amp; Datasets Track</b> 接收（一作）。</li>
   <li><b>[2026.06]</b> 发布长视频条件多事件时序定位工作 <i>CoMET Agent / CoMET-Bench</i>。</li>
   <li><b>[2026.06]</b> 医学世界模型 <i>CLARITY</i> 被 <b>ECCV 2026</b> 接收。</li>

@@ -14,6 +14,8 @@ Hi! I am **Yuanhao Zou**, a Computer Science PhD student at the [University of C
 
 I received my Master's degree in Electrical and Computer Engineering from the [University of Michigan, Ann Arbor](https://umich.edu/), where I was advised by Prof. [Zhaozheng Yin](https://www3.cs.stonybrook.edu/~zyin/index.htm) on Medical Vision and Language Models. Before that, I obtained my Bachelor's degree in Computer Science from [Central South University](https://en.csu.edu.cn/), working with Prof. [Xiangjian He](https://research.nottingham.edu.cn/en/persons/xiangjian-he) on Medical Image Segmentation.
 
+I am currently an **AI Research Intern at OpusClip**, training the core **Opus Clip Video Editing Agent** with a focus on reinforcement-learning-based reasoning optimization.
+
 <p class="profile-actions">
   <a class="btn btn--info btn--small" href="{{ base_path }}/files/CV.pdf"><i class="fas fa-file-pdf"></i> CV</a>
   <a class="btn btn--inverse btn--small" href="{{ base_path }}/files/CV_CN.pdf"><i class="fas fa-file-pdf"></i> 中文简历</a>
@@ -38,6 +40,7 @@ Previously, I also worked extensively on **Medical Vision-Language Models** (vis
 ## News
 
 <ul class="news-list">
+  <li><b>[Oct 2026]</b> Joined <b>OpusClip</b> as an AI Research Intern, training the core Opus Clip Video Editing Agent with RL-based reasoning optimization.</li>
   <li><b>[Oct 2026]</b> <a href="/comet/"><i>CoMET-Bench / CoMET-Agent</i></a> is accepted to <b>NeurIPS 2026, Evaluations &amp; Datasets Track</b>!</li>
   <li><b>[Jun 2026]</b> <i>CoMET Agent</i> and <i>CoMET-Bench</i> are released on <b>arXiv</b>. 🎉</li>
   <li><b>[Jun 2026]</b> <i>CLARITY</i> is accepted to <b>ECCV 2026</b>!</li>
