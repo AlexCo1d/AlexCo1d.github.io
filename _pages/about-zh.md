@@ -9,11 +9,11 @@ author_profile: true
 
 你好！我是 **邹元昊（Yuanhao Zou）**，现为 [University of Central Florida](https://www.ucf.edu/) 计算机科学博士生，在 [Center for Research in Computer Vision (CRCV)](https://www.crcv.ucf.edu/) 师从 [Prof. Chen Chen](https://www.crcv.ucf.edu/chenchen/)，预计于 **2028 年 5 月**毕业。
 
-此前，我在 [University of Michigan, Ann Arbor](https://umich.edu/) 获得电子与计算机工程硕士学位，并与 [Zhaozheng Yin 教授](https://www3.cs.stonybrook.edu/~zyin/index.htm)合作研究医学视觉语言模型；本科毕业于[中南大学](https://www.csu.edu.cn/)，期间在 [Xiangjian He 教授](https://research.nottingham.edu.cn/en/persons/xiangjian-he)指导下开展医学图像分割研究。
+此前，我在 [University of Michigan, Ann Arbor](https://umich.edu/) 获得电子与计算机工程硕士学位，并与纽约州立大学石溪分校的 [Zhaozheng Yin 教授](https://www3.cs.stonybrook.edu/~zyin/index.htm)合作研究医学视觉语言模型；本科毕业于[中南大学](https://www.csu.edu.cn/)，期间在 [Xiangjian He 教授](https://research.nottingham.edu.cn/en/persons/xiangjian-he)指导下开展医学图像分割研究。
 
 目前，我在 **OpusClip** 担任 **AI Research Intern**，负责核心产品 **Opus Clip Video Editing Agent** 的训练，聚焦强化学习后训练与 reasoning 能力优化。
 
-我计划自 **2027 年 5 月**起在上海进行暑期算法研究实习，每周可到岗 5 天，可连续实习 4–6 个月。
+我计划自 **2027 年 4 月**起进行算法研究实习，每周可到岗 5 天，可连续实习 4–6 个月。
 
 <p class="profile-actions">
   <a class="btn btn--info btn--small" href="{{ base_path }}/files/CV_CN.pdf"><i class="fas fa-file-pdf"></i> 中文简历</a>
@@ -50,4 +50,4 @@ author_profile: true
 
 ## 联系方式
 
-如需交流研究合作或 2027 年上海暑期算法研究实习机会，欢迎发送邮件至 [yuanhaoz@ucf.edu](mailto:yuanhaoz@ucf.edu)。
+如需交流研究合作或 2027 年算法研究实习机会，欢迎发送邮件至 [yuanhaoz@ucf.edu](mailto:yuanhaoz@ucf.edu)。
